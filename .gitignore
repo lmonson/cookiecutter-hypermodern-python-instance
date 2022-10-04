@@ -1,0 +1,15 @@
+.mypy_cache/
+/.cookiecutter.json
+/.coverage
+/.coverage.*
+/.env/
+/.idea/
+/.mypy_cache/
+/.python-version
+/.pytype/
+/.tox/
+/dist/
+/docs/_build/
+/replay_*.log
+/src/*.egg-info/
+__pycache__/
