@@ -31,7 +31,6 @@
 
 ## Installation
 
-
 ```console
 $ tox -e dev --devenv .env
 $ conda activate .env/
