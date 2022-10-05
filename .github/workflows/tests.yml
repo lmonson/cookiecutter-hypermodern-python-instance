@@ -59,7 +59,6 @@ jobs:
         run: |
           pipx install --pip-args=--constraint=.github/workflows/constraints.txt tox
           pipx inject --pip-args=--constraint=.github/workflows/constraints.txt tox tox-poetry
-          tox --version
 
       - name: Compute pre-commit cache key
         if: matrix.session == 'pre-commit'
@@ -87,7 +86,7 @@ jobs:
 
       - name: Run Nox
         run: |
-          BASE_PYTHON=${{ matrix.python }} tox
+          tox
 
       - name: Upload coverage data
         if: always() && matrix.session == 'tests'
