@@ -84,7 +84,7 @@ jobs:
           restore-keys: |
             ${{ steps.pre-commit-cache.outputs.result }}-
 
-      - name: Run Nox
+      - name: Run Tox
         run: |
           tox
 
@@ -124,7 +124,7 @@ jobs:
           pipx install --pip-args=--constraint=.github/workflows/constraints.txt poetry
           poetry --version
 
-      - name: Install Nox
+      - name: Install Tox
         run: |
           pipx install --pip-args=--constraint=.github/workflows/constraints.txt tox
           pipx inject --pip-args=--constraint=.github/workflows/constraints.txt tox tox-poetry
