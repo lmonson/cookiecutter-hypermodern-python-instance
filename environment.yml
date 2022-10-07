@@ -1,9 +1,6 @@
-name: env
+name: cookiecutter-hypermodern-python-instance
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
   - python=3.9
-  - tox
-  - poetry
-  - pip

@@ -29,17 +29,30 @@
 
 - TODO
 
-## Installation
+## Installation (developer)
+
+Pre install poetry and tox into your global environment.
 
 ```console
-$ tox -e dev --devenv .env
-$ conda activate .env/
-$ tox
+$ brew install poetry
+$ brew install tox
+```
 
+Create conda environment for this project
 
+```console
+$ conda env create -f environment.yml
+$ conda activate cookiecutter-hypermodern-python-instance
+$ poetry install
+```
 
+Workflow
+
+```console
 $ tox
 ```
+
+## Installation (end user)
 
 ## Usage
 
