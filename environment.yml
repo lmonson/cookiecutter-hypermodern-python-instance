@@ -1,6 +1,13 @@
-name: cookiecutter-hypermodern-python-instance
+name: N
 channels:
-  - defaults
+  - pytorch
   - conda-forge
+  - default
 dependencies:
   - python=3.9
+  - mamba
+  - poetry
+  - tox
+  - pip
+  - pip:
+      - tox-poetry
