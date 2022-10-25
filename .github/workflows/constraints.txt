@@ -1,5 +1,5 @@
 pip==22.2.2
 poetry==1.2.1
-virtualenv==20.14.1
+virtualenv==20.16.6
 tox==3.26.0
 tox-poetry==0.4.1
